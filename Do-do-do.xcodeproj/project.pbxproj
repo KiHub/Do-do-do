@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B34345E2767610F00AD6A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B34345D2767610F00AD6A78 /* AppDelegate.swift */; };
 		0B3434602767610F00AD6A78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B34345F2767610F00AD6A78 /* SceneDelegate.swift */; };
-		0B3434622767610F00AD6A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3434612767610F00AD6A78 /* ViewController.swift */; };
 		0B3434652767610F00AD6A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3434632767610F00AD6A78 /* Main.storyboard */; };
 		0B3434682767610F00AD6A78 /* Do_do_do.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B3434662767610F00AD6A78 /* Do_do_do.xcdatamodeld */; };
 		0B34346A2767611300AD6A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3434692767611300AD6A78 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		0B34345A2767610F00AD6A78 /* Do-do-do.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Do-do-do.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B34345D2767610F00AD6A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B34345F2767610F00AD6A78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B3434612767610F00AD6A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B3434642767610F00AD6A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3434672767610F00AD6A78 /* Do_do_do.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Do_do_do.xcdatamodel; sourceTree = "<group>"; };
 		0B3434692767611300AD6A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				0B34345D2767610F00AD6A78 /* AppDelegate.swift */,
 				0B34345F2767610F00AD6A78 /* SceneDelegate.swift */,
-				0B3434612767610F00AD6A78 /* ViewController.swift */,
 				0B3434632767610F00AD6A78 /* Main.storyboard */,
 				0B3434692767611300AD6A78 /* Assets.xcassets */,
 				0B34346B2767611300AD6A78 /* LaunchScreen.storyboard */,
@@ -141,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B3434682767610F00AD6A78 /* Do_do_do.xcdatamodeld in Sources */,
-				0B3434622767610F00AD6A78 /* ViewController.swift in Sources */,
 				0B34345E2767610F00AD6A78 /* AppDelegate.swift in Sources */,
 				0B3434602767610F00AD6A78 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = "Do-do-do/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = "Do-do-do/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
