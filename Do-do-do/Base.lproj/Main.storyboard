@@ -11,7 +11,7 @@
         <!--Do-do-do-->
         <scene sceneID="Rtu-4J-tzX">
             <objects>
-                <tableViewController id="I6n-en-PZl" sceneMemberID="viewController">
+                <tableViewController id="I6n-en-PZl" customClass="ToDoTableViewController" customModule="Do_do_do" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NQ4-jC-Nno">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Do-do-do" id="tqv-Ym-jus">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JKG-gy-SwV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JKG-gy-SwV">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="saveTask:" destination="I6n-en-PZl" id="kWB-xA-Wcz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jze-ZN-c35" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -59,6 +64,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
