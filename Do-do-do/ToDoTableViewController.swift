@@ -9,7 +9,7 @@ import UIKit
 
 class ToDoTableViewController: UITableViewController {
 
-    var tasks: [String] = []
+    var tasks: [Task] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
