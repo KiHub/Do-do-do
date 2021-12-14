@@ -19,6 +19,9 @@ class ToDoTableViewController: UITableViewController {
       
         let context = getContext()
         let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: false)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
         
         do {
             tasks = try context.fetch(fetchRequest)
@@ -107,6 +110,25 @@ class ToDoTableViewController: UITableViewController {
         return cell
     }
   
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let context = getContext()
+         //   let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
+         //   if let objects = try? context.fetch(fetchRequest) {
+              
+            context.delete(tasks[indexPath.row])
+                
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+            
+            
+         tasks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
